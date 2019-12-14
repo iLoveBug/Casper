@@ -13,6 +13,7 @@
 
     {{!-- Styles'n'Scripts --}}
     <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "built/location-list.css"}}" />
 
     {{!-- This tag outputs SEO meta+structured data and other important settings --}}
     {{ghost_head}}
@@ -76,6 +77,9 @@
         </div>
     </div>
     {{/if}}
+
+    {{!-- enable vue support before casper.js--}}
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10"></script>
 
     {{!-- jQuery, required for fitvids --}}
     <script
