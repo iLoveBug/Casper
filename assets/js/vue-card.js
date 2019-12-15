@@ -9,7 +9,7 @@
 
 (function (window, document) {
     var applyVueForCards = function applyVueForCards() {
-        var cards = document.querySelectorAll('.kg-locations-container');
+        var cards = document.querySelectorAll('.kg-vue-based-card');
         cards.forEach(function (card) {
             new Vue({el: card});
         });
